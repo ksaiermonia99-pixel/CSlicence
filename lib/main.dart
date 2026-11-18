@@ -21,7 +21,7 @@ class EnGeneral extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue[50],
+        backgroundColor: Colors.blue[100],
         foregroundColor: const Color.fromARGB(255, 6, 0, 0),
         centerTitle: true,
         title: const Text('ISI_KEF').animate().fadeIn().slideX(begin: -0.3),
@@ -63,15 +63,51 @@ class EnGeneral extends StatelessWidget {
       body: Column(
         children: [
           Flexible(
-            flex: 4,
+            flex: 3,
             child: Container(
               margin: const EdgeInsets.all(10),
               padding: const EdgeInsets.all(16),
 
               decoration: BoxDecoration(
-                color: Colors.blue[50],
-                border: Border.all(style: BorderStyle.none),
+                color: Colors.blue[100],
+                border: Border.all(style: BorderStyle.solid),
                 borderRadius: BorderRadius.circular(60.0),
+              ),
+              child: Column(
+                children: [
+                  Expanded(
+                    child: Text(
+                      "L’Institut Supérieur d’Informatique du Kef (ISI Kef) est un établissement universitaire public relevant de l’Université de Jendouba situé à Higher Institute of Computer Science of Kef, au Kef. Il est spécialisé dans les technologies de l'information, le développement logiciel, les systèmes d'information et les réseaux.",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.black, fontSize: 24),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+
+          Flexible(
+            flex: 3,
+            child: Container(
+              margin: const EdgeInsets.all(10),
+              padding: const EdgeInsets.all(16),
+
+              decoration: BoxDecoration(
+                color: Colors.blue[100],
+                border: Border.all(style: BorderStyle.solid),
+                borderRadius: BorderRadius.circular(60.0),
+              ),
+              child: Column(
+                children: [
+                  Expanded(
+                    child: Text(
+                      "la maîtrise des technologies informatiques modernes  l'innovation et la recherche scientifique ;l'entrepreneuriat et les compétences professionnelles ;l'adaptation aux évolutions rapides du domaine numérique",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.black, fontSize: 24),
+                    ),
+                  ),
+                ],
               ),
             ),
           ),
@@ -82,21 +118,8 @@ class EnGeneral extends StatelessWidget {
               padding: const EdgeInsets.all(16),
 
               decoration: BoxDecoration(
-                color: Colors.blue[50],
-                border: Border.all(style: BorderStyle.none),
-                borderRadius: BorderRadius.circular(60.0),
-              ),
-            ),
-          ),
-          Flexible(
-            flex: 2,
-            child: Container(
-              margin: const EdgeInsets.all(10),
-              padding: const EdgeInsets.all(16),
-
-              decoration: BoxDecoration(
-                color: Colors.blue[50],
-                border: Border.all(style: BorderStyle.none),
+                color: Colors.blue[100],
+                border: Border.all(style: BorderStyle.solid),
                 borderRadius: BorderRadius.circular(60.0),
               ),
               child: Center(
